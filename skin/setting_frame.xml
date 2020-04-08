@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <Font id="0"  name="宋体" size="13" bold="false"/>
+  <Font id="1" name="宋体" size="12"/>
+  <Font id="2" name="宋体" size="14"/>
+  <VerticalLayout name="setting_frame" bkcolor="#FF22FF5F" padding="0,0,0,0">
+    <VerticalLayout>
+      <VerticalLayout padding="20,20,2,2">
+        <Option text="自动收款"  width="200" height="32" textpadding="20,-8,0,0" align="left"  normalimage="file='checkbox.png' dest='0,5,15,20'" hotimage="file='checkbox_h.png' dest='0,5,15,20'" selectedimage="file='checkbox_s.png' dest='0,5,15,20'" />
+        <Option text="自动同意好友申请"  width="200" height="32" textpadding="20,-8,0,0" align="left"  normalimage="file='checkbox.png' dest='0,5,15,20'" hotimage="file='checkbox_h.png' dest='0,5,15,20'" selectedimage="file='checkbox_s.png' dest='0,5,15,20'" />
+        <Option text="自动同意群聊邀请"  width="200" height="32" textpadding="20,-8,0,0" align="left"  normalimage="file='checkbox.png' dest='0,5,15,20'" hotimage="file='checkbox_h.png' dest='0,5,15,20'" selectedimage="file='checkbox_s.png' dest='0,5,15,20'" />
+        <Option text="自动添加名片"  width="200" height="32" textpadding="20,-8,0,0" align="left"  normalimage="file='checkbox.png' dest='0,5,15,20'" hotimage="file='checkbox_h.png' dest='0,5,15,20'" selectedimage="file='checkbox_s.png' dest='0,5,15,20'" />
+        <Option text="开启消息防撤回"  width="200" height="32" textpadding="20,-8,0,0" align="left"  normalimage="file='checkbox.png' dest='0,5,15,20'" hotimage="file='checkbox_h.png' dest='0,5,15,20'" selectedimage="file='checkbox_s.png' dest='0,5,15,20'" />
+        <Option text="开启夜间下载文件"  width="200" height="32" textpadding="20,-8,0,0" align="left"  normalimage="file='checkbox.png' dest='0,5,15,20'" hotimage="file='checkbox_h.png' dest='0,5,15,20'" selectedimage="file='checkbox_s.png' dest='0,5,15,20'" />
+        <Button text="同步设置其他账号" height="32" width="160" bkcolor="FFE2DDDF" padding="20,4,0,0"></Button>
+      </VerticalLayout>
+    </VerticalLayout>
+  </VerticalLayout>
+</Window>

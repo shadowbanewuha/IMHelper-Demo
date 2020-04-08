@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <Font id="0" name="宋体" size="13" bold="false"/>
+  <Font id="1" name="宋体" size="12"/>
+
+  <VerticalLayout name="message_frame" bkcolor="#FFFFFDF0" padding="0,0,0,0">
+    <HorizontalLayout>
+      <List name="send_group_list" width="120" inset="0,0,0,0" vscrollbar="true"  itemalign="center" itembkcolor="#FFE2DDDF" itemaltbk="true" itemlinecolor="#FF444444" headerbkimage="list_header_bg.png" menu="true">
+        <ListHeader height="32">
+          <ListHeaderItem text="发送分组" font="1" minwidth="120" maxwidth="120" sepimage="file='list_header_sep.png'" sepwidth="1"/>
+        </ListHeader>
+      </List>
+      <HorizontalLayout width="4" bkcolor="#FFFFFFFF"></HorizontalLayout>
+      <List name="send_group_member_list" inset="0,0,0,0"  vscrollbar="true"  itemalign="center" itembkcolor="#FFE2DDDF" itemaltbk="true" itemlinecolor="#FF444444" headerbkimage="list_header_bg.png" menu="true">
+        <ListHeader height="32">
+          <ListHeaderItem text="昵称" font="1" minwidth="100" sepimage="file='list_header_sep.png'" sepwidth="1"/>
+          <ListHeaderItem text="备注" font="1" minwidth="100" sepimage="file='list_header_sep.png'" sepwidth="1"/>
+          <ListHeaderItem text="结果" font="1" minwidth="100" sepimage="file='list_header_sep.png'" sepwidth="1"/>
+        </ListHeader>
+      </List>
+    </HorizontalLayout>
+   
+    <HorizontalLayout height="150" maxheight="150" inset="2,2,2,2" bkcolor="#FF22FF5F">
+      
+      <VerticalLayout padding="2,2,4,4">
+        <VerticalLayout name="send_normal_msg_container" visible="true">
+           <Label font="0" text="文本消息" name="send_msg_label" textcolor="#FFEAEAEA" width="100"></Label>
+           <RichEdit name="send_msg_content_textfield" bkcolor="#FFFFFFFF" height="100" padding="2,2,4,4" textpadding="4,4,4,4" borderround="2,2"  multiline="true" vscrollbar="true" autovscroll="true" rich="true" />
+        </VerticalLayout>
+        <VerticalLayout name="send_file_msg_container" visible="false">
+          <Label font="0" text="图片/文件/视频/Gif 路径" name="send_file_label" textcolor="#FFEAEAEA" width="160" padding="2,32,4,4"></Label>
+          <RichEdit name="send_file_path_textfield" bkcolor="#FFFFFFFF" height="32" padding="2,2,4,4" textpadding="4,4,4,4" borderround="2,2"  multiline="true" vscrollbar="true" autovscroll="true" rich="true" />
+        </VerticalLayout>
+        <VerticalLayout name="send_card_msg_container" visible="false">
+          <Label font="0" text="名片微信ID" textcolor="#FFEAEAEA" width="100"></Label>
+          <Edit name="send_card_wxid_textfield" bkcolor="#FFFFFFFF" height="32" padding="2,2,4,4" textpadding="4,4,4,4" borderround="2,2" />
+          <Label font="0" text="名片昵称" textcolor="#FFEAEAEA" width="100"></Label>
+          <Edit name="send_card_nickname_textfield" bkcolor="#FFFFFFFF" height="32" padding="2,2,4,4" textpadding="4,4,4,4" borderround="2,2" />
+        </VerticalLayout>
+        <VerticalLayout name="send_link_container" visible="false">
+          <VerticalLayout>
+            <HorizontalLayout>
+              <VerticalLayout>
+                <Label font="0" text="标题" textcolor="#FFEAEAEA" width="100"></Label>
+                <Edit name="send_link_title_textfield" bkcolor="#FFFFFFFF" height="32" padding="2,2,4,4" textpadding="4,4,4,4" borderround="2,2" />
+              </VerticalLayout>
+              <VerticalLayout>
+                <Label font="0" text="描述" textcolor="#FFEAEAEA" width="100"></Label>
+                <Edit name="send_link_des_textfield" bkcolor="#FFFFFFFF" height="32" padding="2,2,4,4" textpadding="4,4,4,4" borderround="2,2" />
+              </VerticalLayout>
+            </HorizontalLayout>
+          </VerticalLayout>
+          <VerticalLayout>
+            <HorizontalLayout>
+              <VerticalLayout>
+                <Label font="0" text="链接URL" textcolor="#FFEAEAEA" width="100"></Label>
+                <Edit name="send_link_url_textfield" bkcolor="#FFFFFFFF" height="32" padding="2,2,4,4" textpadding="4,4,4,4" borderround="2,2" />
+              </VerticalLayout>
+              <VerticalLayout>
+                <Label font="0" text="图标路径" textcolor="#FFEAEAEA" width="100"></Label>
+                <Edit name="send_link_icon_textfield" bkcolor="#FFFFFFFF" height="32" padding="2,2,4,4" textpadding="4,4,4,4" borderround="2,2" />
+              </VerticalLayout>
+            </HorizontalLayout>
+          </VerticalLayout>
+        </VerticalLayout>
+      </VerticalLayout>
+      
+      <VerticalLayout width="150" bkcolor="#FF8EFF5F">
+        <Combo name="send_msg_type_combo" droptype="droplist" width="136" height="32" padding="4,4,4,4" textpadding="4,1,1,1"  normalimage="file='combo.png' source='0,0,100,22' corner='2,2,20,2'" hotimage="file='combo.png' source='0,22,100,44' corner='2,2,22,2'" pushedimage="file='combo.png' source='0,44,100,66' corner='2,2,22,2'">
+          <ListLabelElement text="文本" padding="4,4,4,4" selected="true" height="23"/>
+          <ListLabelElement text="图片" padding="4,4,4,4" height="23" />
+          <ListLabelElement text="文件" padding="4,4,4,4" height="23" />
+          <ListLabelElement text="视频" padding="4,4,4,4" height="23" />
+          <ListLabelElement text="Gif" padding="4,4,4,4" height="23" />
+          <ListLabelElement text="名片" padding="4,4,4,4" height="23" />
+          <ListLabelElement text="链接" padding="4,4,4,4" height="23" />
+        </Combo>
+        <HorizontalLayout height="8"></HorizontalLayout>
+        <HorizontalLayout width="136" height="32" padding="4,4,4,4">
+          <Label font="1" width="48" heihgt="32" text="发送间隔" textcolor="#FF000000" padding="2,2,2,2"></Label>
+          <Edit name="send_interval_textfield" bkcolor="#FFFFFFFF" height="32" padding="2,2,4,4" textpadding="4,4,4,4" borderround="2,2" />
+          <Label font="1" width="24" heihgt="32" text="毫秒" textcolor="#FF222222" padding="2,2,4,4"></Label>
+        </HorizontalLayout>
+        <HorizontalLayout height="8"></HorizontalLayout>
+        <Button text="发送" height="32" padding="4,4,4,4" borderround="2,2" bkcolor="#FFF52662"></Button>
+      </VerticalLayout>
+    </HorizontalLayout>
+   </VerticalLayout>
+  </Window>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <Font id="0" name="宋体" size="13" bold="false"/>
+  <Font id="1" name="宋体" size="12"/>
+  <VerticalLayout  inset="2,0,0,0">
+    <!--list开始-->
+    <List name="friend_list" inset="0,0,0,0" itemshowhtml="true" vscrollbar="false"  itemalign="center" itembkcolor="#FFE2DDDF" itemaltbk="true" itemlinecolor="#FF444444" headerbkimage="list_header_bg.png" menu="true">
+      <ListHeader height="32" menu="true">
+        <ListHeaderItem text="头像" font="1" width="40" minwidth="40" maxwidth="40" sepimage="file='list_header_sep.png'" sepwidth="1"/>
+        <ListHeaderItem text="昵称" font="1" minwidth="120" sepimage="file='list_header_sep.png'"  sepwidth="1"/>
+        <ListHeaderItem text="性别" font="1" width="40" minwidth="40" maxwidth="40" sepimage="file='list_header_sep.png'" sepwidth="1"/>
+        <ListHeaderItem text="城市" font="1" width="60" minwidth="60" maxwidth="120" sepimage="file='list_header_sep.png'" sepwidth="1"/>
+        <ListHeaderItem text="账号" font="1" minwidth="100" sepimage="file='list_header_sep.png'" sepwidth="1"/>
+        <ListHeaderItem text="微信ID" font="1" minwidth="100" sepimage="file='list_header_sep.png'" sepwidth="1"/>
+        <ListHeaderItem text="备注" font="1" minwidth="100" sepimage="file='list_header_sep.png'" sepwidth="1"/>
+      </ListHeader>
+    </List>
+  </VerticalLayout>
+</Window>

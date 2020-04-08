@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+  <Font id="0" name="微软雅黑" size="12" bold="false" default="true" />
+  <Font id="1" name="微软雅黑" size="12" bold="true"/>
+  <Menu bkimage="file='menu_bk.png' corner='30,8,8,8'" hole="false" >
+    <MenuElement name="add_contact_to_send_group_menu_item" text="        添加       " />
+    <MenuElement name="delete_contact_from_send_group_menu_item" text="        删除       " />
+  </Menu>
+</Window>

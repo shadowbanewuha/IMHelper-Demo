@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+  <Font id="0" name="微软雅黑" size="12" bold="false" default="true" />
+  <Font id="1" name="微软雅黑" size="12" bold="true"/>
+  <Menu bkimage="file='menu_bk.png' corner='30,8,8,8'" hole="false" >
+      <MenuElement name="send_msg_menu_item" text="        发送消息       " />
+      <MenuElement name="create_room_menu_item" text="        创建群聊       " />
+      <MenuElement name="remark_contact_menu_item" text="        修改备注       "/>
+      <MenuElement name="check_zombie_menu_item" text="        检测好友       "/>
+      <MenuElement name="delete_contact_menu_item" text="        删除好友       "/>
+      <MenuElement name="add_to_send_msg_group_menu_item" text="        添加到分组      " >
+        <!--<MenuElement name="send_msg_group_menu_item" text="     默认分组     "/>-->
+      </MenuElement>
+  </Menu>
+</Window>

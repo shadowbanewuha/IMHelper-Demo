@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <Font id="0"  name="宋体" size="13" bold="false"/>
+  <Font id="1" name="宋体" size="12"/>
+  <Font id="2" name="宋体" size="16"/>
+  <VerticalLayout name="check_zombie_contact_frame" bkcolor="#FF22FF5F" padding="0,0,0,0">
+    <VerticalLayout bkcolor="#FFF02F40" height="100" padding="4,4,4,4">
+      <HorizontalLayout padding="2,8,2,2">
+        <Label font="1" height="32" text="请在好友界面选择需要检查的好友(选中好友->右键->检测)" textcolor="#FF000000" bkcolor="#FF2FDF00" padding="2,0,0,0" align="center" ></Label>
+      </HorizontalLayout>
+      <HorizontalLayout padding="2,2,2,2">
+        <HorizontalLayout width="120" padding="0,0,12,0">
+          <Button font="1" height="32" text="开始检测" textcolor="#FF000000" bkcolor="#FF2FDF00" padding="2,0,0,0" ></Button>
+        </HorizontalLayout>
+        <HorizontalLayout width="160">
+          <Label font="1" width="24" height="32" text="间隔" textcolor="#FF000000" padding="0,2,2,2"></Label>
+          <Edit width="48" name="check_zombie_contact_interval_textfield" bkcolor="#FFFFFFFF" height="24" padding="2,4,4,4" textpadding="4,4,4,4" borderround="2,2" />
+          <Label font="1" width="24" height="32" text="秒" textcolor="#FF222222" padding="2,2,4,4"></Label>
+        </HorizontalLayout>
+      </HorizontalLayout>
+    </VerticalLayout>
+
+    <VerticalLayout bkcolor="#FFFFFFFF"  height="4">
+    </VerticalLayout>
+
+    <VerticalLayout bkcolor="#FF0FFF40"  padding="0,0,0,0">
+      <List name="check_zombie_contact_list" inset="0,0,0,0"  vscrollbar="true"  itemalign="center" itembkcolor="#FFE2DDDF" itemaltbk="true" itemlinecolor="#FF444444" headerbkimage="list_header_bg.png" menu="true">
+        <ListHeader height="32">
+          <ListHeaderItem text="好友ID" font="1" minwidth="100" sepimage="file='list_header_sep.png'"  sepwidth="1"/>
+          <ListHeaderItem text="状态" font="1" minwidth="100" sepimage="file='list_header_sep.png'" sepwidth="1"/>
+          <ListHeaderItem text="检测结果" font="1" minwidth="100" sepimage="file='list_header_sep.png'" sepwidth="1"/>
+        </ListHeader>
+      </List>
+    </VerticalLayout>
+  </VerticalLayout>
+</Window>

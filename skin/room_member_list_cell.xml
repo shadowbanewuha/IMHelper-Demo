@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <ListContainerElement name="room_member_cell" height="32">
+    <VerticalLayout height="32">
+      <HorizontalLayout>
+        <VerticalLayout name="header_image_container" width="40">
+          <Label name="header_image_view" width="32" height="32" />
+        </VerticalLayout>
+        <VerticalLayout >
+          <HorizontalLayout>
+            <Label name="nickname_label" text="1" bordersize="0" textcolor="#FF000000"/>
+            <Label name="remarks_label"  bordersize="0" textcolor="#FF000000"/>
+            <Label name="sex_label"  bordersize="0" textcolor="#FF000000"/>
+            <Label name="city_label"  bordersize="0" textcolor="#FF000000"/>
+          </HorizontalLayout>
+        </VerticalLayout>
+      </HorizontalLayout>
+    </VerticalLayout>
+  </ListContainerElement>
+</Window>

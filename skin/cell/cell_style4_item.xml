@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <ListContainerElement name="style_item_4_cell" height="32">
+    <VerticalLayout height="32">
+      <HorizontalLayout>
+        <VerticalLayout >
+          <HorizontalLayout>
+            <Label name="label0"  bordersize="0" textcolor="#FF000000"/>
+            <Label name="label1"  bordersize="0" textcolor="#FF000000"/>
+            <Label name="label2"  bordersize="0" textcolor="#FF000000"/>
+            <Label name="label3"  bordersize="0" textcolor="#FF000000"/>
+          </HorizontalLayout>
+        </VerticalLayout>
+      </HorizontalLayout>
+    </VerticalLayout>
+  </ListContainerElement>
+</Window>

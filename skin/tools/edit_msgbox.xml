@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <VerticalLayout name="box" width="200" height="108" bkcolor="#FFFFFFFF">
+    <Label name="message_box_title_label" text="修改备注" height="32" align="center" bkcolor="#FF025040" textcolor="#FFFFFFFF"/>
+    <Edit name="message_box_content_edit" text="default" height="28" padding="12, 8, 12, 4" align="center" bordercolor="#C6CFD8"  bkimage="file='search_bg.png' source='0,0,258,23' corner='1,1,1,1'" font="5"></Edit>
+    <HorizontalLayout bkcolor="#FFF2FF20" height="32">
+      <Button height="32" name="confirm_change_contact_nickname" text="确认" padding="4,4,4,4" bkcolor="#FFFFFF20"></Button>
+      <HorizontalLayout bkcolor="#FFFFFFFF" width="4"/>
+      <Button height="32" name="cancel_change_contact_nickname" text="取消" padding="4,4,4,4" bkcolor="#FFFFFF20"></Button>
+    </HorizontalLayout>
+  </VerticalLayout>
+</Window>

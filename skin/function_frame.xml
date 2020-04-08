@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <Font id="0"  name="宋体" size="13" bold="false"/>
+  <Font id="1" name="宋体" size="12"/>
+
+  <VerticalLayout name="function_frame" bkcolor="#FF22FF5F" padding="0,0,0,0">
+
+    <HorizontalLayout>
+      <VerticalLayout name="function_tab_controller_switch" bkcolor="#FF092F40"  width="120"  padding="4,4,0,0">
+        <Option bkcolor="#FFE2DDDF" pos="0, 4, 120, 36" float="true" text="手机号加好友" name="add_mobile_friend_page"  font="1" textcolor="#FF386382" selected="true"/>
+        <Option bkcolor="#FFE2DDDF" pos="0, 40, 120, 72" float="true" text="群聊加好友" name="add_room_member_page" textcolor="#FF386382" font="1" />
+        <Option bkcolor="#FFE2DDDF" pos="0, 76, 120, 108" float="true" text="无痕清粉" name="check_zombie_contact_page" textcolor="#FF386382" font="1" />
+        <Option bkcolor="#FFE2DDDF" pos="0, 112, 120, 144" float="true" text="文件操作" name="file_operate_page" textcolor="#FF386382" font="1"/>
+      </VerticalLayout>
+      
+      <HorizontalLayout width="4" bkcolor="#FFFFFFFF"></HorizontalLayout>
+      
+      <HorizontalLayout bkcolor="#FFFFFFFF" bordercolor="#FF768D9B" bordersize="1">
+        <TabLayout name="function_tab_controller">
+          <HorizontalLayout>
+            <Include source="function_page_subview/add_mobile_contact.xml" />
+          </HorizontalLayout>
+          <HorizontalLayout>
+            <Include source="function_page_subview/add_room_contact.xml" />
+          </HorizontalLayout>
+          <HorizontalLayout>
+            <Include source="function_page_subview/check_zombie_contact.xml" />
+          </HorizontalLayout>
+          <HorizontalLayout>
+            <Include source="function_page_subview/file_operate.xml" />
+          </HorizontalLayout>
+        </TabLayout>
+      </HorizontalLayout>
+    </HorizontalLayout>
+  </VerticalLayout>
+</Window>

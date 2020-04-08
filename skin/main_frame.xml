@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="840,460" mininfo="840,480" caption="80,0,0,20" sizebox="4,4,4,4" roundcorner="4,4,4,4">
+  <Font id="1" name="微软雅黑" size="12" bold="true" textcolor="#FFFFFFFF"/>
+  <Font id="2" name="宋体" size="14" bold="false" textcolor="#FFFFF000"/>
+  <Font id="3" name="微软雅黑" size="16" bold="false" textcolor="#FFFFFFFF"/>
+  <HorizontalLayout name="bg" bkcolor="#FFFFFFFF">
+    
+    <!-- 左侧视图 -->
+    <VerticalLayout name="leftframe" bkcolor="#FFFFFFC0" width="80">
+      <HorizontalLayout name="active_img_frame"  bkimage="file='default_user_header.png'" width="72" height="72" padding="4,4,0,0">
+        
+      </HorizontalLayout>
+      <HorizontalLayout name="user_action_frame" bkcolor="#FFFFFDF0"  height="32" padding="0,4,0,0">
+        <Button height="32" name="add_account_btn" bkcolor="#FFFFFF20"></Button>
+        <Button height="32" name="remove_account_btn" bkcolor="#FFFFFF20"></Button>
+      </HorizontalLayout>
+      <VerticalLayout name="account_list_frame" width="72" padding="4,4,0,0" bkcolor="#FFFFFF00">
+        <List name="account_list" inset="0,-12,0,8" borderround="4,4" childpadding="8" header="false" itemshowhtml="true" vscrollbar="true"  itemalign="center" itembkcolor="#FFFFFFFF" itemlinecolor="#FF444444" menu="true">
+          
+        </List>
+      </VerticalLayout>
+    </VerticalLayout>
+
+    <!-- 中间视图 -->
+    <VerticalLayout name="middleframe"  width="200">
+      <VerticalLayout bkcolor="#FF000040" height="80" padding="4,0,0,0">
+        <Text text="微信号/QQ号/手机号：" font="1" padding="6,20,0,0" textcolor="#FFFFFFFF">  </Text>
+        <HorizontalLayout height ="40" padding="4,4,0,0">
+          <Edit width="160" height="24" text="搜索" bordercolor="#C6CFD8" name="search_contact_textfield" bkimage="file='search_bg.png' source='0,0,258,23' corner='1,1,1,1'"/>
+          <Button width="22" height="20" padding="6,2,0,0" name="search_contact_btn"  normalimage="file='search_icon_ex.bmp' source='4,4,26,24'" hotimage="file='search_icon_ex.bmp' source='34,4,56,24'" pushedimage="file='search_icon_ex.bmp' source='94,4,116,24'"></Button>
+        </HorizontalLayout>
+      </VerticalLayout>
+      <VerticalLayout name="main_tab_controller_switch" bkcolor="#FF0FFF40" padding="4,4,0,0">
+        <Option bkcolor="#FF0F0F40" pos="4, 4, 192, 56" float="true" text="好友" name="friend_page"  font="2" normalimage="tabbar_normal.png" hotimage="tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="tabbar_pushed.png" group="contenttab" selected="true"/>
+        <Option bkcolor="#FF0F0F50" pos="4, 60, 192, 112" float="true" text="群聊" name="room_page" textcolor="#FF386382" font="2" normalimage="tabbar_normal.png" hotimage="tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="tabbar_pushed.png" group="contenttab"/>
+        <Option bkcolor="#FF0F6F40" pos="4, 116, 192, 168" float="true" text="公众号" name="public_page" textcolor="#FF386382" font="2" normalimage="tabbar_normal.png" hotimage="tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="tabbar_pushed.png" group="contenttab"/>
+        <Option bkcolor="#FF260F40" pos="4, 172, 192, 224" float="true" text="消息管理" name="message_page" textcolor="#FF386382" font="2" normalimage="tabbar_normal.png" hotimage="tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="tabbar_pushed.png" group="contenttab"/>
+        <Option bkcolor="#FF060F40" pos="4, 228, 192, 280" float="true"  text="功能" name="function_page" textcolor="#FF386382" font="2" normalimage="tabbar_normal.png" hotimage="tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="tabbar_pushed.png" group="contenttab"/>
+        <Option bkcolor="#FF7F0F40" pos="4, 284, 192, 336" float="true" text="设置" name="setting_page" textcolor="#FF386382" font="2" normalimage="tabbar_normal.png" hotimage="tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="tabbar_pushed.png" group="contenttab"/>
+      </VerticalLayout>
+    </VerticalLayout>
+
+    <!-- 右侧视图 -->
+    <VerticalLayout name="rightframe" bkcolor="#FFFFFF40">
+      <HorizontalLayout height="64" bkcolor="#FF34FDF0">
+        <HorizontalLayout>
+          <Label text="好友" name="tab_title_label" textcolor="#FFFFFFFF" font="3" float="true" pos="20,20,120,44"></Label>
+        </HorizontalLayout>
+        <HorizontalLayout width="79">
+          <Button float="true" pos="0,0,26,17" name="min_btn" maxwidth="26" maxheight="17" normalimage="file='sys_dlg_min.png' source='52,0,78,17'" hotimage="file='sys_dlg_min.png' source='26,0,52,17'" pushedimage="file='sys_dlg_min.png' source='0,0,26,17'"/>
+          <Button float="true" pos="26,0,52,17" name="max_btn" maxwidth="26" maxheight="17" normalimage="file='sys_dlg_max.png' source='52,0,78,17'" hotimage="file='sys_dlg_max.png' source='26,0,52,17'" pushedimage="file='sys_dlg_max.png' source='0,0,26,17'"/>
+          <Button float="true" pos="26,0,52,17" name="restore_btn" visible="false" maxwidth="26" maxheight="17" normalimage="file='sys_dlg_restore.png' source='52,0,78,17'" hotimage="file='sys_dlg_restore.png' source='26,0,52,17'" pushedimage="file='sys_dlg_restore.png' source='0,0,26,17'"/>
+          <Button float="true" pos="52,0,78,17" name="close_btn" maxwidth="26" maxheight="17" normalimage="file='sys_dlg_close.png' source='99,0,125,17'" hotimage="file='sys_dlg_close.png' source='54,0,80,17'" pushedimage="file='sys_dlg_close.png' source='9,0,35,17'"/>
+        </HorizontalLayout>
+      </HorizontalLayout>
+      <HorizontalLayout bkcolor="#FFFFFFFF" bordercolor="#FF768D9B" bordersize="1">
+        <TabLayout name="main_tab_controller">
+          <HorizontalLayout>
+            <Include source="friend_frame.xml" />
+          </HorizontalLayout>
+          <HorizontalLayout>
+            <Include source="room_frame.xml" />
+          </HorizontalLayout>
+          <HorizontalLayout>
+            <Include source="public_frame.xml" />
+          </HorizontalLayout>
+          <HorizontalLayout>
+            <Include source="message_frame.xml" />
+          </HorizontalLayout>
+          <HorizontalLayout>
+            <Include source="function_frame.xml" />
+          </HorizontalLayout>
+          <HorizontalLayout>
+            <Include source="setting_frame.xml" />
+          </HorizontalLayout>
+          <HorizontalLayout>
+            <Include source="search_friend_frame.xml" />
+          </HorizontalLayout>
+        </TabLayout>
+      </HorizontalLayout>
+    </VerticalLayout>
+    
+  </HorizontalLayout>
+</Window>

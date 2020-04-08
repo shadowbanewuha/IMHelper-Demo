@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <Font id="0"  name="宋体" size="13" bold="false"/>
+  <Font id="1" name="宋体" size="12"/>
+
+  <VerticalLayout name="room_frame" bkcolor="#FFFFFDF0" padding="0,0,0,0">
+    <HorizontalLayout height="44" bkcolor="#FFFFFDF0">
+      <Label text="群聊列表" align="center"  font="0" textcolor="#FFFFFFFF"  minwidth="100" bkcolor="#FFF03DF0" > </Label>
+      <HorizontalLayout width="4" bkcolor="#FFFFFFFF"></HorizontalLayout>
+      <Label text="群成员" align="center"  font="0" textcolor="#FFFFFFFF" minwidth="100" bkcolor="#FF300DF0"> </Label>
+    </HorizontalLayout>
+    
+    <HorizontalLayout>  
+      <List name="room_list" inset="0,0,0,0" itemshowhtml="true" vscrollbar="false"  itemalign="center" itembkcolor="#FFE2DDDF" itemaltbk="true" itemlinecolor="#FF444444" headerbkimage="list_header_bg.png" menu="true">
+        <ListHeader height="32">
+          <ListHeaderItem text="头像" font="1" width="40" minwidth="40" maxwidth="40" sepimage="file='list_header_sep.png'" sepwidth="1"/>
+          <ListHeaderItem text="群名" font="1" minwidth="100" sepimage="file='list_header_sep.png'"  sepwidth="1"/>
+          <ListHeaderItem text="备注" font="1" minwidth="100" sepimage="file='list_header_sep.png'" sepwidth="1"/>
+        </ListHeader>
+      </List>
+      
+      <HorizontalLayout width="4" bkcolor="#FFFFFFFF"></HorizontalLayout>
+      
+      <List name="room_member_list" inset="0,0,0,0" itemshowhtml="true" vscrollbar="false"  itemalign="center" itembkcolor="#FFE2DDDF" itemaltbk="true" itemlinecolor="#FF444444" headerbkimage="list_header_bg.png" menu="true">
+        <ListHeader height="32">
+          <ListHeaderItem text="头像" font="1" width="40" minwidth="40" maxwidth="40" sepimage="file='list_header_sep.png'" sepwidth="1"/>
+          <ListHeaderItem text="昵称" font="1" minwidth="100" sepimage="file='list_header_sep.png'"  sepwidth="1"/>
+          <ListHeaderItem text="备注" font="1" minwidth="100" sepimage="file='list_header_sep.png'" sepwidth="1"/>
+          <ListHeaderItem text="性别" font="1" width="40" minwidth="40" maxwidth="40" sepimage="file='list_header_sep.png'" sepwidth="1"/>
+          <ListHeaderItem text="城市" font="1" width="60" minwidth="60" maxwidth="120" sepimage="file='list_header_sep.png'" sepwidth="1"/>
+        </ListHeader>
+      </List>
+    </HorizontalLayout>
+    
+  </VerticalLayout>
+</Window>

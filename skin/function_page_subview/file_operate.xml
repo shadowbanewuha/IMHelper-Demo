@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <Font id="0"  name="宋体" size="13" bold="false"/>
+  <Font id="1" name="宋体" size="12"/>
+  <Font id="2" name="宋体" size="14"/>
+  <VerticalLayout name="function_frame" bkcolor="#FF22FF5F" padding="0,0,0,0">
+    <VerticalLayout>
+      <HorizontalLayout padding="2,8,2,2">
+        <Label font="2" width="120" height="32" text="aeskey" textcolor="#FF000000" bkcolor="#FF2FDF00" padding="2,0,0,0" align="center" ></Label>
+        <Edit font="2" height="32"  padding="4,0,4,0" textcolor="#FFFEFEFE"></Edit>
+      </HorizontalLayout>
+      <HorizontalLayout padding="2,8,2,2">
+        <Label font="2" width="120" height="32" text="fileid" textcolor="#FF000000" bkcolor="#FF2FDF00" padding="2,0,0,0" align="center" ></Label>
+        <Edit font="2" height="32"  padding="4,0,4,0" textcolor="#FFFEFEFE"></Edit>
+      </HorizontalLayout>
+      <HorizontalLayout padding="2,8,2,2">
+        <Label font="2" width="120" height="32" text="下载路径" textcolor="#FF000000" bkcolor="#FF2FDF00" padding="2,0,0,0" align="center" ></Label>
+        <Edit font="2" height="32"  padding="4,0,4,0" textcolor="#FFFEFEFE"></Edit>
+      </HorizontalLayout>
+      <HorizontalLayout padding="2,8,2,2">
+        <Label font="1" width="120" height="32" text="文件类型" textcolor="#FF000000" bkcolor="#FF2FDF00" padding="2,4,0,0" align="center" ></Label>
+        <Combo name="download_file_type_combo" droptype="droplist" width="136" height="32" padding="2,4,4,4" textpadding="4,1,1,1"  normalimage="file='combo.png' source='0,0,100,22' corner='2,2,20,2'" hotimage="file='combo.png' source='0,22,100,44' corner='2,2,22,2'" pushedimage="file='combo.png' source='0,44,100,66' corner='2,2,22,2'">
+          <ListLabelElement text="高清图片" padding="4,4,4,4" height="23" selected="true" />
+          <ListLabelElement text="标清图片" padding="4,4,4,4" height="23" />
+          <ListLabelElement text="视频缩略图" padding="4,4,4,4" height="23" />
+          <ListLabelElement text="视频" padding="4,4,4,4" height="23" />
+          <ListLabelElement text="文件" padding="4,4,4,4" height="23" />
+        </Combo>
+        <Button font="1" width="80" height="32" text="下载" textcolor="#FF000000" bkcolor="#FF2FDF00" padding="2,4,4,4" ></Button>
+      </HorizontalLayout>
+    </VerticalLayout>
+
+    <VerticalLayout bkcolor="#FFFFFFFF"  height="4">
+    </VerticalLayout>
+
+    <VerticalLayout bkcolor="#FF0FFF40"  padding="2,4,4,4">
+      <HorizontalLayout height="50" padding="2,8,2,2">
+        <Label font="2" width="120" height="32" text="dat文件路径" textcolor="#FF000000" bkcolor="#FF2FDF00" padding="2,0,0,0" align="center" ></Label>
+        <Edit font="2" height="32"  padding="4,0,4,0" textcolor="#FFFEFEFE"></Edit>
+      </HorizontalLayout>
+      <HorizontalLayout height="50" padding="2,8,2,2">
+        <Label font="2" width="120" height="32" text="保存路径" textcolor="#FF000000" bkcolor="#FF2FDF00" padding="2,0,0,0" align="center" ></Label>
+        <Edit font="2" height="32"  padding="4,0,4,0" textcolor="#FFFEFEFE"></Edit>
+        <Button font="1" width="80" height="32" text="解码" textcolor="#FF000000" bkcolor="#FF2FDF00" padding="4,0,4,4" ></Button>
+      </HorizontalLayout>
+    </VerticalLayout>
+  </VerticalLayout>
+</Window>

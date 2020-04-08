@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <Font id="0"  name="宋体" size="13" bold="false"/>
+  <Font id="1" name="宋体" size="12"/>
+  <Font id="2" name="宋体" size="16"/>
+  <VerticalLayout name="add_mobile_contact_frame" bkcolor="#FF22FF5F" padding="0,0,0,0">
+    <VerticalLayout bkcolor="#FFF02F40" height="150" padding="4,4,4,4">
+      <HorizontalLayout padding="2,8,2,2">
+        <Button font="1" width="120" height="32" text="导入手机号文件" textcolor="#FF000000" bkcolor="#FF2FDF00" padding="2,0,0,0" ></Button>
+        <Label font="2" height="32" text="mobile.txt"  padding="4,0,0,0" textcolor="#FFFFFFFF"></Label>
+      </HorizontalLayout>
+      <HorizontalLayout padding="2,2,2,2">
+        <HorizontalLayout width="120" padding="0,0,12,0">
+          <Button font="1" height="32" text="开始添加" textcolor="#FF000000" bkcolor="#FF2FDF00" padding="2,0,0,0" ></Button>
+        </HorizontalLayout>
+        <HorizontalLayout width="160">
+          <Label font="1" width="48" height="32" text="添加间隔" textcolor="#FF000000" padding="0,2,2,2"></Label>
+          <Edit width="48" name="add_mobile_contact_interval_textfield" bkcolor="#FFFFFFFF" height="24" padding="2,4,4,4" textpadding="4,4,4,4" borderround="2,2" />
+          <Label font="1" width="24" height="32" text="分钟" textcolor="#FF222222" padding="2,2,4,4"></Label>
+        </HorizontalLayout>
+      </HorizontalLayout>
+      <HorizontalLayout padding="2,8,2,2">
+        <Label font="1" width="120" height="32" text="验证语" textcolor="#FF000000" bkcolor="#FF2FDF00" padding="2,0,0,0" align="center" ></Label>
+        <Edit font="2" height="32" text="测试添加好友"  padding="4,0,4,0" textcolor="#FFFEFEFE"></Edit>
+      </HorizontalLayout>
+    </VerticalLayout>
+
+    <VerticalLayout bkcolor="#FFFFFFFF"  height="4">
+    </VerticalLayout>
+
+    <VerticalLayout bkcolor="#FF0FFF40"  padding="0,0,0,0">
+      <List name="add_mobile_contact_list" inset="0,0,0,0"  vscrollbar="true"  itemalign="center" itembkcolor="#FFE2DDDF" itemaltbk="true" itemlinecolor="#FF444444" headerbkimage="list_header_bg.png" menu="true">
+        <ListHeader height="32">
+          <ListHeaderItem text="手机号" font="1" minwidth="100" sepimage="file='list_header_sep.png'"  sepwidth="1"/>
+          <ListHeaderItem text="状态" font="1" minwidth="100" sepimage="file='list_header_sep.png'" sepwidth="1"/>
+          <ListHeaderItem text="添加结果" font="1" minwidth="100" sepimage="file='list_header_sep.png'" sepwidth="1"/>
+        </ListHeader>
+      </List>
+    </VerticalLayout>
+  </VerticalLayout>
+</Window>
